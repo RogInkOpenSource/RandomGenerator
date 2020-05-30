@@ -10,6 +10,7 @@ import tech.dsstudio.randomgen.SegmentList
 import kotlin.math.abs
 
 class Tests {
+    @ExperimentalStdlibApi
     @Test
     fun normalizingArrays() {
         val list = listOf(20.0, 30.0, 40.0, 10.0)
