@@ -40,3 +40,30 @@ println(norm.next())
 val poisson = PoissonDistribution(5)
 println(poisson.next())
 ```
+
+### Pick an element from a collection
+```kotlin
+val list = listOf(1, 2, 3, 4)
+val picker = Picker(list)
+println(picker.pickOne())
+```
+
+### Pick a subset
+```kotlin
+val list = listOf(1, 2, 4, 8)
+val picker = Picker(list)
+println(picker.pickSomeNonRepeating(3))
+```
+
+### Shuffle a deck of cards
+```kotlin
+val cards = listOf( /* ... */ )
+val shuffler = Shuffler(cards)
+println(shuffler.shuffle())
+```
+
+## They could be extensions
+
+Yes, it would be nice if they were extensions to List<T>. 
+While for the sake of Java compatibility, I figured it could be nice to 
+just make them standalone classes.
